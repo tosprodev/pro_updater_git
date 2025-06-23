@@ -1,0 +1,33 @@
+{
+    "name": "yourvendor/pro_updater_git",
+    "description": "A Laravel package for auto-updating via Git.",
+    "type": "laravel-package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "YourVendor\\ProUpdaterGit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Md Kaif",
+            "email": "kaif.mth@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "illuminate/support": "^10.0 || ^11.0",
+        "illuminate/database": "^10.0 || ^11.0",
+        "illuminate/console": "^10.0 || ^11.0",
+        "illuminate/routing": "^10.0 || ^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YourVendor\\ProUpdaterGit\\ProUpdaterGitServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
