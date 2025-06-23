@@ -25,8 +25,6 @@ composer require mdkaif/pro_updater_git
 Laravel supports package auto-discovery (5.5+). If for some reason it doesn’t register automatically (Laravel 10/11 or below), add the service provider manually:
 
 php
-Copy
-Edit
 // config/app.php
 
 'providers' => [
