@@ -34,8 +34,7 @@ php
 ## ⚙️ Configuration & Setup
 1. Run the Setup Command
 bash
-Copy
-Edit
+
 php artisan pro-updater-git:setup
 This command walks you through:
 
@@ -53,13 +52,11 @@ Saving your Git token (for private repos)
 At the root of your Laravel app, create:
 
 pgsql
-Copy
-Edit
+
 VERSION.txt
 With content like:
 
-Copy
-Edit
+
 1.0.0
 ✅ Ensure this file is committed to your Git repo.
 
@@ -67,8 +64,8 @@ Edit
 Add the update checker middleware to your web group in:
 
 php
-Copy
-Edit
+
+
 // app/Http/Kernel.php
 
 protected array $middlewareGroups = [
@@ -81,8 +78,7 @@ protected array $middlewareGroups = [
 Add the Blade directive to your layout:
 
 blade
-Copy
-Edit
+
 <!-- resources/views/layouts/app.blade.php -->
 
 @proUpdaterButton
@@ -92,15 +88,13 @@ Manual Update
 You can trigger an update at any time via Artisan:
 
 bash
-Copy
-Edit
+
 php artisan pro-updater-git:update
 ## 🌍 Environment Variables
 Optional overrides via .env:
 
 env
-Copy
-Edit
+
 PRO_UPDATER_GIT_REPO_URL=https://github.com/your-org/your-repo.git
 PRO_UPDATER_GIT_REPO_BRANCH=main
 PRO_UPDATER_GIT_VERSION_FILE=VERSION.txt
